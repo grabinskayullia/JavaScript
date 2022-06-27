@@ -1,18 +1,20 @@
-/* 4.	Напишите функцию, которая возвращает n-е число Фибоначчи.
-		Число, которое должна вернуть функция вводит пользователь.
-		Для решения используйте цикл.
-
-		Пользователь ввел: 6
-		Ряд Фибоначчи: 1, 1, 2, 3, 5, 8, 13, ...
-		Функция должна вернуть: 8
+/*      Напишите функцию которая возвращает длину самого длинного слова в предложении. 
+        Ваш ответ должен быть числом.
+        "The quick brown fox jumped over the lazy dog" => 6
 */
 /*
+var string = "The quick brown fox jumped over the lazy dog";
 
-var number = +prompt('Введите число: ');
+function getNumber(str) {
+    var newArray = str.split(' ');
+    var longest = 0;
 
-function fib(num) {
-    return num <= 1 ? num : fib(num - 1) + fib(num - 2);  
+    for(var i = 0; i < newArray.length; i++){
+        if(newArray[i].length > longest) { 
+            longest = newArray[i].length;
+        } 
+    }
+    return longest;
 }
-
-console.log(fib(number));
+console.log(getNumber(string));
 */

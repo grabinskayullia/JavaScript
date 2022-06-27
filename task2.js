@@ -1,21 +1,11 @@
-/* Создать функцию, возводящую число в степень, число и сама степень вводится пользователем
-		Проверить числа на корректность
+/*2. Напишите функцию подсчета градусов Фаренгейта при входящем параметре температуры в цельсиях.
+    Алгоритм пересчета из градусов Цельсия в градусы Фаренгейта - это температура в градусах Цельсия, умноженная на 9/5 плюс 32.
 */
 /*
-var number = +prompt('Введите число: ');
-var degree = +prompt('Введите степень: ');
-var result;
-
-if (isNaN(number) || isNaN(degree)){
-    alert('Error');
-}
-
-function calculationNumbers(a, b){
-
-    var result = Math.pow(a, b);
+function getTempture(a){
+    var result = a * (9 / 5) + 32;
     return result;
 }
 
-var getNumber = calculationNumbers(number, degree);
-console.log(getNumber);
+console.log(getTempture(30));
 */

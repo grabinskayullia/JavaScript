@@ -1,53 +1,16 @@
-/*1.	Создать функцию calculate(a, b, sign), где a и b — два числа, sign — знак арифметической операции.
-		Функция должна расчитывать результат операции, исходя из переданного ей знака. 
-		Функция должна проверять корректность введенных чисел и знака операции.
-		Все аргументы для функции принять от пользователя.
+/*1. Напишите функцию, которая принимает массив в качестве аргумента. 
+        Используя slice(), извлеките информацию из массива аргументов и верните новый массив, содержащий элементы «warm» и «sunny».
+
+        ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 */
 /*
+var array = ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'];
 
-var firstNumber = +prompt('Введите первое число: ');
-var secondNumber = +prompt('Введите друге число: ');
-var signs = prompt('Введите знак арифметической операции: ');
-var result;
+function getArray(array) {
+    console.log(array);
 
-
-function add(a, b) {
-    return a + b;
+    return array.slice(2, -2);
 }
 
-function sub(a, b) {           
-    return a - b;
-}
-
-function mul(a, b) {
-    return a * b;
-}
-
-function div(a, b) {
-    return a / b;
-}
-
-        
-switch (signs) {
-    case "+":
-        result = add(firstNumber, secondNumber);
-        break;
-    case "-":
-        result = sub(firstNumber, secondNumber);
-        break;
-    case "*":
-        result = mul(firstNumber, secondNumber);
-        break;
-    case "/":
-        result = div(firstNumber, secondNumber);
-        break;
-    default:
-        document.write("<p><b style='color:red'>" + signs + "</b> - не является знаком арифметической операции.</p>");
-}
-
-if (result != undefined) {
-    document.write("Результат операции: " + result);
-} else {
-    console.log("Error");
-}
+console.log(getArray(array));
 */

@@ -1,15 +1,22 @@
-/*	Допишите функцию, которая определит, парное ли число (решение должно быть в одну строку).
-		Функция должна вернуть "Even" или "Odd";
+/*3. Напишите функцию которая бы переворачивала предоставленную строку
+        Возможно, вам придется превратить строку в массив, прежде чем вы можете обратить его. 
+        Ваш результат должен быть строкой.
+        "something"
 
-		function isEven(num) {
-			// your code here
-		}
+		"test" => "tset"
 */
 /*
-function isEven(num) {
-	return ( num % 2 == 0) ? alert('Even') : alert('Odd');
-}
+var text = 'test';
 
-var result = isEven(13);
-console.log(result);
+function showLetters(a){
+    var list = a.split('');
+    console.log(list);
+    
+    var change = list.reverse();
+    console.log(change);
+
+    return change.join('');
+    
+}
+console.log(showLetters(text));
 */
